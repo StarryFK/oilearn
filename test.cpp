@@ -2,6 +2,6 @@
 
 int main()
 {
-	printf("HelloWorld");
+	printf("HelloWorld\n");
 }
 // just a test file
