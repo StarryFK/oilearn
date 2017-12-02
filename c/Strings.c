@@ -23,7 +23,7 @@ int main()
 
 int prchar(char in[], int nu)
 {
-	char *p;
+	char *p = 0;
 	p = in;
 	for(int i = 0; i<nu; i++)
 	{

@@ -3,7 +3,7 @@
 int main()
 {
 	int a[10];
-	int *b;
+	int *b = 0;
 	b = a;
 	printf("%20p\n",b);
 	for(int i=0;i<10;i++)
