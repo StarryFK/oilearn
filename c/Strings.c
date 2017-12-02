@@ -4,10 +4,31 @@
 int prchar();
 int main()
 {
-	char s[10],b[10];
+	char s[20];
 	gets(s);
-	gets(b);
-	printf("%d\n%d\n",strlen(s),strlen(b));
+	printf("prchar:\n");
+	prchar(s, 20);
+	printf("puts:\n");
 	puts(s);
+	printf("for number group:\n");
+	for(int i = 0; i<20; i++)
+		printf("%c", s[i]);
+	printf("\n");
+	printf("in mem:\n");
+	for(int i = 0; i<20; i++)
+		printf("%x\n", s[i]);
+	printf("\n");
 	return 0;
+}
+
+int prchar(char in[], int nu)
+{
+	char *p;
+	p = in;
+	for(int i = 0; i<nu; i++)
+	{
+		printf("%c",*p);
+		p++;
+	}
+	printf("\n");
 }

@@ -3,12 +3,12 @@
 int main()
 {
 	int a[10];
-	int b;
+	int *b;
 	b = a;
-	printf("%x\n",a);
+	printf("%20p\n",b);
 	for(int i=0;i<10;i++)
 	{
-		printf("%d:%x\n",i,&a[i]);
+		printf("%1d:%18p\n",i,&a[i]);
 	}
 	return 0;
 }
