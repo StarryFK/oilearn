@@ -12,10 +12,13 @@ int main()
 	do
 		scanf("%d", &a[count++]);
 	while((ch = getchar()) != '\n');
+	printf("Here's C:");
 	printArray(a,count);
-	cto(a,b,count,ctof());
-	cto(a,c,count,ctok());
+	cto(a,b,count,ctof);
+	cto(a,c,count,ctok);
+	printf("Here's F:");
 	printArray(b,count);
+	printf("Here's K:");
 	printArray(c,count);
 	printf("\n");
 
@@ -25,7 +28,7 @@ int main()
 void printArray(int *out, int len)
 {
 	for(int l = 0; l<len; l++)
-		printf("%d ", *(out + l));
+		printf("%5d", *(out + l));
 	printf("\n");
 }
 
