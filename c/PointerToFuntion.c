@@ -21,6 +21,7 @@ int main()
 	printf("Here's K:");
 	printArray(c,count);
 	printf("\n");
+	printf("%d,%p,%d", sizeof(ctof), *ctof, ctof);
 
 	return 0;
 }

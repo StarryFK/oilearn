@@ -16,19 +16,20 @@ int main()
 	printf("\n");
 	printf("in mem:\n");
 	for(int i = 0; i<20; i++)
+	{
+		printf("%p:",&s[i]);
 		printf("%x\n", s[i]);
+	}
 	printf("\n");
 	return 0;
 }
 
-int prchar(char in[], int nu)
+int prchar(char *in, int nu)
 {
-	char *p = 0;
-	p = in;
 	for(int i = 0; i<nu; i++)
 	{
-		printf("%c",*p);
-		p++;
+		printf("%c",*in);
+		in++;
 	}
 	printf("\n");
 }
