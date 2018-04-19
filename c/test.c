@@ -2,10 +2,7 @@
 
 int main()
 {
-	int count=0 ,n;
-	scanf("%d", &n);
-
-	for(int i=0; i<=n; i++)
-	{
-		
+	char a=3, b=6, c;
+	c = a^b<<2;
+	printf("%b\n", c);
 }
